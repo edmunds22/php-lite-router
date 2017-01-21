@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^(css|js|fonts|images)($|/) - [L]
+
+RewriteRule ^(.*)$ index.php [NC,L]
+</IfModule>  
